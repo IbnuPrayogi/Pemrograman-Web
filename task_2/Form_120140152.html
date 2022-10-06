@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 Pemrograman Web</title>
+
+    <style>
+        body{
+            background-image: url(./cat.jpg);
+            width: 100%;
+        }
+        .form-field{
+            background-color:rgb(185, 185, 185);
+            color: black;
+            border: 7px solid black;
+            border-radius: 10px;
+
+        }
+        legend{
+            color: black;
+            border: 5px;
+            border-style: solid;
+            border-color:black;
+            background-color: grey;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        input{
+            background-color: white;
+
+        }
+        input:hover{
+            background-color: white;
+        }
+        table{
+            margin-left: 50px;
+            background-color: grey;
+            border-spacing: 0 30px;
+            border-color: #111;
+            border-radius: 5px;
+            border-style: solid;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+        #Agama{
+            background-color: grey;
+        }
+        #content{
+            width: 40%;
+            margin-top: 5%;
+            margin-left: 30%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+    <form action="Data_120140152.html" method="get"  >
+        <fieldset class="form-field">
+            <legend>Registrasi Data Diri</legend>
+            <table>
+                <tr>
+                    <td><label >Nama </label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="Nama Lengkap..." required></td>
+                </tr>
+                <tr>
+                    <td><label >NIM </label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nim" placeholder="NIM..." required></td>
+                </tr>
+                <tr>
+                    <td><label >Asal Provinsi </label></td>
+                    <td>:</td>
+                    <td><input type="text" name="prov" placeholder="Asal Provinsi..."></td>
+                </tr>
+                <tr>
+                    <td><label >Tanggal Lahir </label></td>
+                    <td>:</td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><label >Agama </label></td>
+                    <td>:</td>
+                    <td>                
+                        <select name="Agama" id="Agama">
+                            <option value="Agama">Islam</option>
+                            <option value="Agama">Kristen</option>
+                            <option value="Agama">Katholik</option>
+                            <option value="Agama">Hindu</option>
+                            <option value="Agama">Buddha</option>
+                            <option value="Agama">Islam</option> 
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Foto Profil :</label></td>
+                    <td>:</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+        
+        
+    </form> 
+    </div>
+    
+</body>
+</html>
