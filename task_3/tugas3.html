@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tugas3.css">
+
+</head>
+<body>
+    <!-- BLANK TITLE (akan di isi dengan script nomor 1) -->
+    <h2 id="title"></h2>
+
+    <div id="content">
+        <h3>Daftar Content</h3>
+
+        <!-- BLANK LIST (akan di isi dengan script nomor 2) -->
+        <ul id="content-list">     
+        </ul>
+
+        <button onclick="inputList()">Tambah List</button>
+        <button onclick= "darkMode()"> Dark Mode</button>
+        <button onclick= "lightMode()"> Light Mode</button>
+    </div>
+    <script>
+        
+        //1. Menambahkan Teks Pada Element Pilihan
+        const title=document.getElementById('title');
+        const titleText=document.createTextNode("Tugas 3 Pemrograman WEB");
+        title.appendChild(titleText);
+        
+
+        //2. Menambahkan Element Pada HTML
+        const list=document.getElementById('content-list');
+        for (let i = 0; i < 4; i++) {
+            const listText=document.createTextNode("List ke "+ (i+1));
+            const listItem=document.createElement('li');
+            listItem.appendChild(listText);
+            list.appendChild(listItem) 
+        };
+        
+        //3. Event Handler
+        function darkMode(){
+            document.body.style.backgroundColor= 'black';
+            document.body.style.color='purple';
+        }
+
+        function lightMode(){
+            document.body.style.backgroundColor= 'pink';
+            document.body.style.color='purple';
+        }
+
+
+        function inputList(){
+            const list=document.getElementById('content-list');
+
+            const listText=document.createTextNode("List Baru");
+
+            const listItem=document.createElement('li');
+
+            listItem.appendChild(listText);
+
+            list.appendChild(listItem);
+        }
+    </script>
+
+</body>
+</html>

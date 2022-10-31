@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: pink;
+    color: purple;
+}
+
+ul{
+    list-style: none;
+}
+
+#content{
+    border: solid 10px purple;
+    border-radius: 30px;
+    margin:75px 200px 0 200px;
+}
+
+button{
+    border-radius: 8px;
+    background-color: purple;
+    color: pink;
+}
